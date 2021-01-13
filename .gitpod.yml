@@ -1,2 +1,8 @@
 image:
   file: .gitpod.dockerfile
+ports:
+  - port: 5000
+    onOpen: open-browser
+tasks:
+  - init: npm install
+    command: npm run start 
